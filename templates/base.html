@@ -79,7 +79,30 @@
   {% endif %}
 </head>
 <body>
-  {% block content %}{% endblock %}
+  <header class="page-header">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="column col-sm-2 col-sm-offset-3">
+	  <a class="logo" href="{{ SITEURL }}"><img class="img-circle text-center" src="{{ GRAVATAR }}?size=300" alt="{{ SITENAME }}" /></a>
+	</div>
+        <div class="column col-sm-3">
+	  <h1><a href="{{ SITEURL }}">{{ AUTHOR }}</a></h1>
+	  <span>{{ SITEINFO }}</span>
+          <ul class="nav nav-navbar social">
+          {% if FEED_ATOM %}
+            <li class="rss"><a href="{{ FEED_DOMAIN }}/{{ FEED_ATOM }}"><i class="fa fa-2x fa-rss"></i></a></li>
+          {% endif %}
+          {% if FEED_RSS %}
+            <li class="rss"><a href="{{ FEED_DOMAIN }}/{{ FEED_RSS }}"><i class="fa fa-2x fa-rss"></i></a></li>
+          {% endif %}
+          {% for name, link in SOCIAL %}
+            <li class="{{name}}"><a href="{{ link }}"><i class="fa fa-2x fa-{{ name }}"></i></a></li>
+          {% endfor %}
+          </ul>
+	</div>
+      </div>
+    </div>
+  </header>
 
 </body>
 </html>

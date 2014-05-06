@@ -1,2 +1,86 @@
-$font-family-base:      "Open Sans", sans-serif;
-$headings-font-family:  "Bree Serif", serif;
+$font-family-base:      	"Open Sans", sans-serif;
+$headings-font-family:  	"Bree Serif", serif;
+
+$font-size-base:        	16px;
+$font-size-h1:          	1.8em;
+
+$link-color:            	#9e4943;
+$text-color:            	#333333;
+
+$page-header-border-color: 	#ffffff;	
+
+@import 'bootstrap.scss';
+
+a {
+  font-weight: 400;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.page-header {
+  padding-bottom: 44px;
+  text-align: center;
+  a {
+    &.logo {
+      img {
+        width: 10em;
+        height: 10em;
+        border: 2px solid #444444;
+      }
+    }
+  }
+  h1 {
+    a {
+      color: #444444;
+    }
+  }
+}
+
+.social {
+  li {
+    display: inline-block;
+    padding: 0 0.25em;
+    a {
+      padding: 0.5em 0;
+      &:hover {
+        background-color: transparent;
+      }
+    }
+    &.flickr {
+      a {
+        &:hover {
+	  color: #72858c;
+	}
+      }
+    }
+    &.github {
+      a {
+        &:hover {
+	  color: #4183c4;
+	}
+      }
+    }
+    &.rss {
+      a {
+        &:hover {
+	  color: #f16b24;
+	}
+      }
+    }
+    &.tumblr {
+      a {
+        &:hover {
+	  color: #2c4762;
+	}
+      }
+    }
+    &.twitter {
+      a {
+        &:hover {
+	  color: #44ccf6;
+	}
+      }
+    }
+  }
+}
