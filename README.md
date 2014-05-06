@@ -1,4 +1,4 @@
-pelican-crisp-rewrite
+pelican-theme-experiment
 =====================
 
 ## Requirements
