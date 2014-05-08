@@ -82,10 +82,10 @@
   <header class="page-header">
     <div class="container-fluid">
       <div class="row">
-        <div class="column col-sm-2 col-sm-offset-3">
+        <div class="column col-sm-2 col-sm-offset-3 header-left">
 	  <a class="logo" href="{{ SITEURL }}"><img class="img-circle text-center" src="{{ GRAVATAR }}?size=300" alt="{{ SITENAME }}" /></a>
 	</div>
-        <div class="column col-sm-3">
+        <div class="column col-sm-3 header-right">
 	  <h1><a href="{{ SITEURL }}">{{ AUTHOR }}</a></h1>
 	  <span>{{ SITEINFO }}</span>
           <ul class="nav nav-navbar social">
@@ -103,6 +103,17 @@
       </div>
     </div>
   </header>
+
+  <main>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="column col-sm-8 col-sm-offset-2">
+          {% block content %}
+          {% endblock %}
+	</div>
+      </div>
+    </div>
+  </main>
 
 </body>
 </html>

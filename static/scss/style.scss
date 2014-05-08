@@ -19,20 +19,31 @@ a {
 }
 
 .page-header {
-  padding-bottom: 44px;
   text-align: center;
-  a {
-    &.logo {
-      img {
-        width: 10em;
-        height: 10em;
-        border: 2px solid #444444;
-      }
+  a.logo {
+    img {
+      width: 10em;
+      height: 10em;
+      border: 2px solid #444444;
     }
   }
   h1 {
     a {
       color: #444444;
+    }
+  }
+}
+
+.post {
+  h2 {
+    font-size: 1.8em;
+  }
+  span {
+    i {
+      color: $link-color;
+    }
+    &.post-time, &.post-tags {
+      font-size: 0.9em;
     }
   }
 }
@@ -48,39 +59,37 @@ a {
       }
     }
     &.flickr {
-      a {
-        &:hover {
-	  color: #72858c;
-	}
+      a:hover {
+        color: #72858c;
       }
     }
     &.github {
-      a {
-        &:hover {
-	  color: #4183c4;
-	}
+      a:hover {
+        color: #4183c4;
       }
     }
     &.rss {
-      a {
-        &:hover {
-	  color: #f16b24;
-	}
+      a:hover {
+        color: #f16b24;
       }
     }
     &.tumblr {
-      a {
-        &:hover {
-	  color: #2c4762;
-	}
+      a:hover {
+        color: #2c4762;
       }
     }
     &.twitter {
-      a {
-        &:hover {
-	  color: #44ccf6;
-	}
+      a:hover {
+        color: #44ccf6;
       }
+    }
+  }
+}
+
+@media (min-width: $screen-md-min) { 
+  .page-header {
+    .header-right {
+      text-align: left;
     }
   }
 }
