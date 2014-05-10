@@ -1,7 +1,7 @@
 $font-family-base:      	"Open Sans", sans-serif;
 $headings-font-family:  	"Bree Serif", serif;
 
-$font-size-base:        	16px;
+$font-size-base:        	18px;
 $font-size-h1:          	1.8em;
 
 $link-color:            	#9e4943;
@@ -12,39 +12,78 @@ $page-header-border-color: 	#ffffff;
 @import 'bootstrap.scss';
 
 a {
-  font-weight: 400;
   &:hover {
     text-decoration: none;
   }
 }
 
-.page-header {
-  text-align: center;
-  a.logo {
-    img {
-      width: 10em;
-      height: 10em;
-      border: 2px solid #444444;
-    }
-  }
-  h1 {
-    a {
-      color: #444444;
+h1, h2 {
+  font-size: 1.9em;
+  color: #444444;
+  a {
+    color: inherit;
+    &:hover {
+      color: $link-color;
     }
   }
 }
 
-.post {
-  h2 {
+h2 {
+  margin-bottom: 0;
+}
+
+h3, h4 {
+  margin: 0.3em 0;
+}
+
+h3 {
+  font-size: 1.5em;
+  color: #777777;
+}
+
+h4 {
+  font-size: 1.3em;
+  color: #999999;
+}
+
+.page-header {
+  margin-bottom: 0;
+  text-align: center;
+  i {
     font-size: 1.8em;
   }
-  span {
-    i {
-      color: $link-color;
+  img {
+    width: 10em;
+    height: 10em;
+    border: 2px solid #444444;
+  }
+}
+
+.post {
+  border-bottom: 1px solid #eeeeee;
+  margin-bottom: 2em;
+  header {
+   span {
+      font-size: 0.85em;
+      i {
+        color: #666666;
+      }
     }
-    &.post-time, &.post-tags {
-      font-size: 0.9em;
+  }
+  section {
+    margin: 1em 0;
+    img {
+      &.pull-right {
+        border: 1px solid #444444;
+        margin: 0 0 1em 1.5em;
+      }
     }
+  }
+}
+
+.paginator {
+  li.which-page {
+    padding: 0 1em;
   }
 }
 
@@ -86,7 +125,7 @@ a {
   }
 }
 
-@media (min-width: $screen-md-min) { 
+@media (min-width: $screen-md-min) {
   .page-header {
     .header-right {
       text-align: left;
