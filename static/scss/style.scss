@@ -63,11 +63,9 @@ h4 {
   border-bottom: 1px solid #eeeeee;
   margin-bottom: 2em;
   header {
-   span {
-      font-size: 0.85em;
-      i {
+    i {
+        font-size: 0.85em;
         color: #666666;
-      }
     }
   }
   section {
@@ -79,6 +77,11 @@ h4 {
       }
     }
   }
+}
+
+.page-footer {
+  margin: 0 0 3em 0;
+  color: #777777;
 }
 
 .paginator {
