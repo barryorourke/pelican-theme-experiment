@@ -7,6 +7,17 @@ $font-size-h1:          	1.8em;
 $link-color:            	#9e4943;
 $text-color:            	#333333;
 
+$light-color:			#444444;
+$lighter-color:			#777777;
+$even-lighter-color:		#999999;
+$really-light-color:		#eeeeee;
+
+$flickr-color:			#72858c;
+$github-color:			#4183c4;
+$rss-color:			#f16b24;
+$twitter-color:			#44ccf6;	
+$tumblr-color:			#2c4762;
+
 $page-header-border-color: 	#ffffff;	
 
 @import 'bootstrap.scss';
@@ -19,7 +30,7 @@ a {
 
 h1, h2 {
   font-size: 1.9em;
-  color: #444444;
+  color: $light-color;
   a {
     color: inherit;
     &:hover {
@@ -38,16 +49,44 @@ h3, h4 {
 
 h3 {
   font-size: 1.5em;
-  color: #777777;
+  color: $lighter-color;
 }
 
 h4 {
   font-size: 1.3em;
-  color: #999999;
+  color: $even-lighter-color;
+}
+
+nav {
+  li {
+    padding: 0 0.5em;
+  }
+}
+
+footer {
+  margin: 0 0 3em 0;
+  color: $lighter-color;
+}
+
+article {
+  border-bottom: 1px solid $really-light-color;
+  margin-bottom: 2.5em;
+  i {
+    font-size: 0.85em;
+    color: $light-color;
+  }
+  section {
+    margin: 1em 0;
+    img {
+      &.pull-right {
+        border: 1px solid $light-color;
+        margin: 0 0 1em 1.5em;
+      }
+    }
+  }
 }
 
 .page-header {
-  margin-bottom: 0;
   text-align: center;
   i {
     font-size: 1.8em;
@@ -55,38 +94,7 @@ h4 {
   img {
     width: 10em;
     height: 10em;
-    border: 2px solid #444444;
-  }
-}
-
-.post {
-  border-bottom: 1px solid #eeeeee;
-  margin-bottom: 2em;
-  header {
-    i {
-        font-size: 0.85em;
-        color: #666666;
-    }
-  }
-  section {
-    margin: 1em 0;
-    img {
-      &.pull-right {
-        border: 1px solid #444444;
-        margin: 0 0 1em 1.5em;
-      }
-    }
-  }
-}
-
-.page-footer {
-  margin: 0 0 3em 0;
-  color: #777777;
-}
-
-.paginator {
-  li.which-page {
-    padding: 0 1em;
+    border: 2px solid $light-color;
   }
 }
 
@@ -102,27 +110,27 @@ h4 {
     }
     &.flickr {
       a:hover {
-        color: #72858c;
+        color: $flickr-color;
       }
     }
     &.github {
       a:hover {
-        color: #4183c4;
+        color: $github-color;
       }
     }
     &.rss {
       a:hover {
-        color: #f16b24;
+        color: $rss-color;
       }
     }
     &.tumblr {
       a:hover {
-        color: #2c4762;
+        color: $tumblr-color;
       }
     }
     &.twitter {
       a:hover {
-        color: #44ccf6;
+        color: $twitter-color;
       }
     }
   }
