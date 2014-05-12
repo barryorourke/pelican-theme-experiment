@@ -87,6 +87,10 @@ article {
 }
 
 .page-header {
+  background-color: $really-light-color;
+  border-bottom: $lighter-color;
+  margin: 0;
+  padding: 1em 0;
   text-align: center;
   i {
     font-size: 1.8em;
