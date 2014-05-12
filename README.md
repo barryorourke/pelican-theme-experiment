@@ -8,10 +8,10 @@ pelican-theme-experiment
 
 ## Settings
 
-SITENAME - name of site, used all over the place.
-SITEINFO - short paragraph about the site, used in header.
-GRAVATAR - url of your gravatar image, used for favicon and header photo.
+* SITENAME - name of site, used all over the place.
+* SITEINFO - short paragraph about the site, used in header.
+* GRAVATAR - url of your gravatar image, used for favicon and header photo.
 
-USE_OPEN_GRAPH - enable better facebook integration.
-OPEN_GRAPH_FB_APP_ID - facebook appplication id.
-OPEN_GRAPH_IMAGE - default image facebook uses for posts.
+* USE_OPEN_GRAPH - enable better facebook integration.
+* OPEN_GRAPH_FB_APP_ID - facebook appplication id.
+* OPEN_GRAPH_IMAGE - default image facebook uses for posts.
