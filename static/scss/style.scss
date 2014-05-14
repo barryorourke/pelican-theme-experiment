@@ -64,8 +64,15 @@ nav {
 }
 
 footer {
-  margin: 0 0 3em 0;
+  background-color: $really-light-color;
+  border-top: $lighter-color;
+  margin: 0;
+  padding: 2em 0;
   color: $lighter-color;
+  text-align: center;
+  span {
+    font-size: 0.85em;
+  }
 }
 
 article {
