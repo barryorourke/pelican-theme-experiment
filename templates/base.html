@@ -116,6 +116,29 @@
   <footer>
     <div class="container-fluid">
       <div class="row">
+        <div class="column col-sm-4 col-sm-offset-2">
+         <h3><i class="fa fa-tags"></i> Tags</h3>
+           <ul class="list-inline text-center tag-cloud">
+           {% for tag in tag_cloud  | sort%}
+             <li class="tag-{{ tag.1 }}">
+               <a href="{{ SITEURL }}/tag/{{ tag.0|string|replace(" ", "-" )|lower }}/index.html">{{ tag.0 }}</a>
+             </li>
+           {% endfor %}
+           </ul>
+	</div>
+	<div class="column col-sm-4">
+          <ul class="list-inline text-center">
+            <h3><i class="fa fa-external-link"></i> Pages</h3>
+            <li {% if page_name == 'index' %}class="active"{% endif %}><a href="{{ SITEURL }}">Home</a></li>
+            {% if DISPLAY_PAGES_ON_MENU %}
+            {% if pages %}{% for p in pages %}
+            <li {% if p == page %}class="active"{% endif %}><a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
+            {% endfor %}{% endif %}
+            {% endif %}
+          </ul>
+	</div>
+      </div>
+      <div class="row">
         <div class="column col-sm-12">
           <span>Copyright &copy; 2013-2013 {{ SITENAME }}</span>
         </div>
