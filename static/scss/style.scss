@@ -66,12 +66,16 @@ nav {
 
 footer {
   font-size: 0.85em;
+  text-align: center;
   background-color: $really-light-color;
   border-top: 1px solid $other-light-color;
   margin: 0;
   padding: 2em 0;
   color: $lighter-color;
-  text-align: center;
+  padding: 2em 0;
+  .footer-text {
+    margin-top: 1em;
+  }
   span {
     color: $even-lighter-color;
   }
